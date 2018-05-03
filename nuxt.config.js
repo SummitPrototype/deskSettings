@@ -1,4 +1,3 @@
-console.log(process.env.DEPLOY_ENV==='GH_PAGES')
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
     base: '/deskSettings/'
@@ -12,7 +11,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 		 }
 	}
 
-const bla = {
+module.exports = {
   ...routerBase,
   modules: [
   ],
@@ -30,6 +29,5 @@ const bla = {
        { rel:'stylesheet', href:'https://fonts.googleapis.com/icon?family=Material+Icons'}
     ]
   }
+
 }
-console.log(bla.router.base)
-module.exports = bla
