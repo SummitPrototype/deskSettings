@@ -1,24 +1,24 @@
 {
   "publicPath": "/deskSettings/_nuxt/",
   "all": [
-    "pages_scan.77a56a55aca5b2cb3f38.js",
-    "pages_index.27f674964a58b6fcdc86.js",
+    "pages_scan.ba26b7d0baf2a6408bbd.js",
+    "pages_index.19a293191763830698c1.js",
     "layouts_default.c3d9a72599e6691df4ad.js",
     "vendor.4bea4a96eace22c9c64f.js",
     "app.7a9ee37d39d578d91200.js",
-    "manifest.ad8b79bd21c8b8f2ee42.js",
+    "manifest.71ffadf4e61451bcb5ad.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.ad8b79bd21c8b8f2ee42.js",
+    "manifest.71ffadf4e61451bcb5ad.js",
     "vendor.4bea4a96eace22c9c64f.js",
     "app.7a9ee37d39d578d91200.js"
   ],
   "async": [
-    "pages_scan.77a56a55aca5b2cb3f38.js",
-    "pages_index.27f674964a58b6fcdc86.js",
+    "pages_scan.ba26b7d0baf2a6408bbd.js",
+    "pages_index.19a293191763830698c1.js",
     "layouts_default.c3d9a72599e6691df4ad.js"
   ],
   "modules": {

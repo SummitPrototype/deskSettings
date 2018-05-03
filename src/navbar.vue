@@ -33,7 +33,7 @@
 		<li><a href="#!">Nederlands</a></li>
 	</ul>
 	<ul id="dropdownSettings" class="dropdown-content">
-		<li><a href="/">Settings</a></li>
+		<li><a href="index">Settings</a></li>
 		<li><a href="#!">SyncData</a></li>
 		<li class="divider"></li>
 		<li><a href="#!">Log Out</a></li>
