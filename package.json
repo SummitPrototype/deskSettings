@@ -12,8 +12,11 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate": "DEPLOY_ENV=GH_PAGES nuxt generate"
+    "generate": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "author": "JopBB",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^5.1.4"
+  }
 }
