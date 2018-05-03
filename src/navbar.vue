@@ -33,7 +33,7 @@
 		<li><a href="#!">Nederlands</a></li>
 	</ul>
 	<ul id="dropdownSettings" class="dropdown-content">
-		<li><a href="index">Settings</a></li>
+		<li><nuxt-link to="/">Settings</nuxt-link></li>
 		<li><a href="#!">SyncData</a></li>
 		<li class="divider"></li>
 		<li><a href="#!">Log Out</a></li>
@@ -42,7 +42,7 @@
 		<div class="nav-wrapper">
 			<a href="#!" class="brand-logo" style="padding-left:10px;"><b>Summit</b>Desk</a>
 			<ul class="left hide-on-med-and-down">
-				<li id="scanPage"><a href="./scan"><i class="material-icons">crop_free</i></a></li>
+				<li id="scanPage"><nuxt-link to="scan"><i class="material-icons">crop_free</i></nuxt-link></li>
 				<li><a href="#!"><i class="material-icons">local_printshop</i></a></li>
 				<li><a href="#!"><i class="material-icons">person_add</i></a></li>
 				<li>
