@@ -3,28 +3,6 @@
 		background: linear-gradient(#FFF, #F1F1F1);
 		height:100%;
 	}
-	.left{
-		margin-left:20%;
-	}
-	i.material-icons.large{
-		font-size:25pt;
-	}
-	nav{
-		background-color: #263238;
-	}
-	#noWifi{
-		color: red;
-	}
-	#navSearch{
-		margin-top:-6px;
-		margin-left:10px;
-	}
-	#navSearch .prefix{
-		font-size:24px;
-	}
-	#navSearchLabel{
-		margin-top:-5px;
-	}
 	.collapsible div{
 		outline:none;
 	}
@@ -54,43 +32,15 @@
 		background-color: #fff;
 		border:none;
 	}
+	.row{
+		margin-top:50px;
+	}
 </style>
 <template>
 <div>
-	<ul id="dropdown1" class="dropdown-content">
-		<li><a href="#!">English</a></li>
-		<li><a href="#!">Nederlands</a></li>
-	</ul>
-	<ul id="dropdownSettings" class="dropdown-content">
-		<li><a href="#!">Settings</a></li>
-		<li><a href="#!">SyncData</a></li>
-		<li class="divider"></li>
-		<li><a href="#!">Log Out</a></li>
-	</ul>
-	<nav>
-		<div class="nav-wrapper">
-			<a href="#!" class="brand-logo" style="padding-left:10px;"><b>Summit</b>Desk</a>
-			<ul class="left hide-on-med-and-down">
-				<li><a href="#!"><i class="material-icons">crop_free</i></a></li>
-				<li><a href="#!"><i class="material-icons">local_printshop</i></a></li>
-				<li><a href="#!"><i class="material-icons">person_add</i></a></li>
-				<li>
-					<div id="navSearch" class="input-field">
-						<i class="material-icons prefix">search</i>
-						<input id="icon_prefix" type="text">
-						<label id="navSearchLabel" for="icon_prefix">Search</label>
-					</div>
-				</li>
-			</ul>
-			<ul class="right hide-on-med-and-down">
-				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">English<i class="material-icons right">arrow_drop_down</i></a></li>
-				<li><a href="#!"><i id="noWifi" class="material-icons">signal_wifi_off</i></a></li>
-				<li><a class="dropdown-trigger" href="#!" data-target="dropdownSettings"><i class="material-icons">more_vert</i></a></li>
-			</ul>
-		</div>
-	</nav>
+	<navbar></navbar>
 	<div class="container">
-		<h4>Settings</h4>
+		<!-- <h4>Settings</h4> -->
 		<div class="row">
 			
 			<ul class="collapsible col s8">
@@ -235,7 +185,11 @@
 </div>
 </template>
 <script>
+	import navbar from '~/src/navbar.vue';
 	export default{
+		components:{
+			navbar
+		},
 		mounted(){
 			$(".dropdown-trigger").dropdown();
 			$('.collapsible').collapsible();

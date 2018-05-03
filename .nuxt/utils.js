@@ -113,13 +113,13 @@ export async function setContext(app, context) {
         return process.client
       },
       isStatic: process.static,
-      isDev: false,
+      isDev: true,
       isHMR: false,
       app,
       
       payload: context.payload,
       error: context.error,
-      base: '/deskSettings/',
+      base: '/',
       env: {}
     }
     // Only set once

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const _bd016fe6 = () => import('..\\pages\\scan.vue' /* webpackChunkName: "pages_scan" */).then(m => m.default || m)
 const _6499081c = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 
 
@@ -58,11 +59,16 @@ const scrollBehavior = function (to, from, savedPosition) {
 export function createRouter () {
   return new Router({
     mode: 'history',
-    base: '/deskSettings/',
+    base: '/',
     linkActiveClass: 'nuxt-link-active',
     linkExactActiveClass: 'nuxt-link-exact-active',
     scrollBehavior,
     routes: [
+		{
+			path: "/scan",
+			component: _bd016fe6,
+			name: "scan"
+		},
 		{
 			path: "/",
 			component: _6499081c,
